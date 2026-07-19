@@ -14,11 +14,10 @@ This project follows **SDD + TDD + DDD + LLM Wiki**:
 ## Paths
 
 - **Code**: `/Users/pangjinfu/code/compare_image` (this project)
-- **LLM Wiki Project**: `/Users/pangjinfu/Documents/llm_wiki/image_compare/image_compare`
-  - Wiki pages: `wiki/` (entities, concepts, decisions, comparisons, etc.)
-  - Schema: `schema.md` (page conventions and cross-referencing rules)
-  - Purpose: `purpose.md` (project goals and scope)
-  - Raw sources: `raw/` (reference materials)
+- **Wiki**: `wiki/` (in this project — entities, concepts, decisions, comparisons, etc.)
+- **Schema**: `schema.md` (wiki page conventions and cross-referencing rules)
+- **Purpose**: `purpose.md` (project goals and scope)
+- **LLM Wiki App**: `/Users/pangjinfu/Documents/llm_wiki/image_compare/image_compare` (symlink to this project)
 - **MCP Server**: `llm-wiki` (configured in `.claude/settings.json`)
   - Use `llm_wiki_set_project` to pin to `image_compare` project
   - Use `llm_wiki_read_file` to read wiki pages
@@ -70,7 +69,7 @@ compare_image/
 ├── docs/               # Architecture & design docs
 │   ├── architecture/   # System architecture, domain model
 │   └── design/         # Detailed design docs
-├── (wiki is in LLM Wiki project, accessed via MCP)
+├── wiki/               # LLM Wiki knowledge base (version controlled)
 │   ├── entities/       # Domain entity pages
 │   ├── concepts/       # Concept/algorithm pages
 │   ├── comparisons/    # A vs B analysis
@@ -78,6 +77,8 @@ compare_image/
 │   ├── specs/          # Spec summaries
 │   ├── test-strategies/# Test strategy pages
 │   └── synthesis/      # Cross-cutting summaries
+├── schema.md           # Wiki page conventions
+├── purpose.md          # Project goals and scope
 ├── src/image_compare/  # Source code (DDD structured)
 │   ├── image/          # Image bounded context
 │   ├── comparison/     # Comparison bounded context

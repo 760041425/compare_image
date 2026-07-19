@@ -33,9 +33,12 @@ data/*.mp4
 data/*.avi
 data/*.mkv
 
-# Wiki build artifacts
-wiki/_build/
+# Wiki build artifacts (Obsidian/LLM Wiki internal)
+wiki/.obsidian/
 wiki/.cache/
+.llm-wiki/
+.obsidian/
+raw/
 
 # Logs
 *.log
