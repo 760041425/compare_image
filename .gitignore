@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large files tracked via git-lfs or excluded)
+data/*.mp4
+data/*.avi
+data/*.mkv
+
+# Wiki build artifacts
+wiki/_build/
+wiki/.cache/
+
+# Logs
+*.log
+
+# Generated reports (large self-contained HTML + visualization images)
+reports/
+
+# Claude Code local settings (user-specific, not shared)
+.claude/settings.local.json
